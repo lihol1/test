@@ -83,11 +83,13 @@ export default function MaterialUI () {
       };
 
     const handleClick = () => {
-    console.info('You clicked the Chip.');
+        console.info('You clicked the Chip.');
     };
 
 
-    //
+    const handleDelete = ()=>{
+        console.log('delete')
+    }
 
     
 
