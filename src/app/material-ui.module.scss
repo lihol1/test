@@ -1,0 +1,36 @@
+// .Mui-disabled		
+// .Mui-error		
+// .MuiSelect-root.Mui-focused {
+//     border: 3px solid #000;
+// }	
+
+.select {
+    // & input{
+    //      border: 1px dashed green;
+    // }
+    // & input:focus {
+
+    // }
+}
+.select:hover {
+    background-color: #999;
+    // border: 3px solid #000;
+}
+.select:focus {
+   
+}
+.select :global .MuiList-root {
+    background-color: green;
+}
+// .MuiSelect-filled	
+// .MuiSelect-icon	
+// .MuiSelect-iconFilled	
+// .MuiSelect-iconOpen	
+// .MuiSelect-iconOutlined	
+// .MuiSelect-iconStandard	
+// .MuiSelect-multiple	
+// .MuiSelect-nativeInput	
+// .MuiSelect-outlined	
+// .MuiSelect-root	
+// .MuiSelect-select	
+// .MuiSelect-standard

@@ -1,0 +1,29 @@
+
+.custom-select {
+    &-container > div {
+        background-color: #de82ec !important;
+        box-shadow: none !important;
+    }
+    &__control {
+        height: 100px;
+        // background-color: #e7b2ef !important;
+    }
+    &--menu-is-open {   
+        border-color: #06f656 !important;
+        border: 5px solid #06f656 !important
+    }
+    // &__input-container {
+    //     background-color: #86bb4a;
+    // }
+    // &__indicator-separator{
+    //     display: none;
+    // }
+    &__menu {
+        background-color: #000 !important;
+    }
+    &__option {
+        &--is-focused {
+            background-color: lighten(#292a2e, 8%) !important;
+        }
+    }
+}
