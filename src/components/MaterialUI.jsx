@@ -87,8 +87,8 @@ export default function MaterialUI () {
     };
 
 
-    const handleDelete = ()=>{
-        console.log('delete')
+    const handleDelete = (value)=>{      
+        setPersonName(personName.filter((el)=>el !== value))
     }
 
     
@@ -497,7 +497,9 @@ export default function MaterialUI () {
                 renderValue={(selected) => (
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
                     {selected.map((value) => (
-                        <Chip key={value} label={value}  variant="filled" onClick={handleClick} onDelete={handleDelete}/>
+                        <Chip key={value} label={value}  variant="filled" onClick={handleClick} onMouseDown={(event) => {
+                            event.stopPropagation();
+                           }} onDelete={()=>handleDelete(value)} />
                     ))}
                     </Box>
                 )}
